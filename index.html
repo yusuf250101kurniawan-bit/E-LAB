@@ -7,8 +7,8 @@
 <meta name="description" content="E-LAB — pengingat jadwal sampling, DO & laporan lab.">
 <meta name="theme-color" content="#0f2a44">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/png" href="icons/favicon.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -18,7 +18,7 @@
   //  ALAMAT APLIKASI — URL "Aplikasi web" proyek Lab Reminder App (berakhiran /exec)
   //  Ganti di sini bila URL deployment berubah.
   // ════════════════════════════════════════════════════════════════════
-  var APP_URL = 'https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwlNgwf3P8w-Ay-LHiaulmnJHvoRDZsUXZEj5YtjWfzEAnBnYFSJdpVAlFk3VBpJ1ye/exec';
+  var APP_URL = 'https://script.google.com/macros/s/AKfycbwlNgwf3P8w-Ay-LHiaulmnJHvoRDZsUXZEj5YtjWfzEAnBnYFSJdpVAlFk3VBpJ1ye/exec';
 </script>
 <style>
   :root { --navy: #0f2a44; --teal: #1aa39d; --text: #e8f1f8; --muted: #9db3c6; }
@@ -55,7 +55,7 @@
 </head>
 <body>
 <div class="splash" id="splash">
-  <div class="ring"><img src="icons/icon-192.png" alt=""></div>
+  <div class="ring"><img src="icon-192.png" alt=""></div>
   <div class="brand">E-LAB</div>
   <div class="sub" id="msg">Memuat aplikasi…</div>
   <div class="hidden" id="retry" style="display:flex;gap:10px">
@@ -67,7 +67,7 @@
 <iframe id="app" title="E-LAB" allow="camera; microphone; clipboard-read; clipboard-write; fullscreen; geolocation"></iframe>
 
 <div class="install hidden" id="install">
-  <img src="icons/icon-192.png" alt="">
+  <img src="icon-192.png" alt="">
   <div class="t" id="installText"><b>Pasang E-LAB</b>Buka seperti aplikasi, langsung dari layar utama.</div>
   <button class="btn" id="installBtn">Pasang</button>
   <button class="x" aria-label="Tutup" onclick="hideInstall(true)">×</button>
