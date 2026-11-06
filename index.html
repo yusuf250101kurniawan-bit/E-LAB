@@ -33,8 +33,9 @@
   <p id="ios" class="hidden">iPhone: ketuk <b>Bagikan ⬆︎</b> di Safari, lalu <b>Tambahkan ke Layar Utama</b>.</p>
 <script>
   // URL "Aplikasi web" proyek Lab Reminder App (berakhiran /exec)
-  var APP_URL = 'https://script.google.com/macros/s/AKfycbwlNgwf3P8w-Ay-LHiaulmnJHvoRDZsUXZEj5YtjWfzEAnBnYFSJdpVAlFk3VBpJ1ye/exec';
+  var APP_URL = 'https://script.google.com/macros/s/AKfycbxqhvI8ZK9bY_bj7Dz0R9ECP6pIx7dChpZbTykdZCshp43niuy_TXdm0Xd87E6RPEa6/exec';
 
+  if (/TEMPEL_URL/.test(APP_URL)) { document.getElementById('msg').textContent = 'APP_URL belum diisi di index.html.'; throw 0; }
   var standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
   document.getElementById('open').href = APP_URL;
   if (standalone) {
